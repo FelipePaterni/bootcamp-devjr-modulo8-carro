@@ -36,6 +36,7 @@ export class CarsComponent {
     this.car = car; 
   }
   removeCar(car: Car) {
-   
+    this.cars = this.cars.filter(c => c !== car);
+
   }
 }
