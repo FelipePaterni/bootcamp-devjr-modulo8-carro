@@ -8,6 +8,7 @@ import { FormCarroComponent } from './components/form-carro/form-carro.component
 import { FormsModule } from '@angular/forms';
 import { CarsComponent } from './components/cars/cars.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
     FormCarroComponent,
     CarsComponent,
     HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
