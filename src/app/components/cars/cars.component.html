@@ -1,0 +1,34 @@
+<app-form-carro (saveEmitter)="saveCar()" [car]="car"></app-form-carro>
+
+<div class="container mt-2">
+  <h2>Carros Cadastrados</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Montadora</th>
+        <th>Preço</th>
+        <th>Ano</th>
+        <th class="text-end">Opções</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let c of cars">
+        <td>{{ c.id }}</td>
+        <td>{{ c.name }}</td>
+        <td>{{ c.montadora }}</td>
+        <td>{{ c.price }}</td>
+        <td>{{ c.year }}</td>
+        <td class="text-end">
+          <button class="btn btn-success me-2" (click)="updateCar(c)">
+            Alterar
+          </button>
+          <button class="btn btn-danger" [disabled]="isUpdate" (click)="removeCar(c)">Remover</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormCarroComponent } from './components/form-carro/form-carro.component';
 import { FormsModule } from '@angular/forms';
+import { CarsComponent } from './components/cars/cars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormCarroComponent
+    FormCarroComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,

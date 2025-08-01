@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Car } from '../../Car';
 
 @Component({
   selector: 'app-form-carro',

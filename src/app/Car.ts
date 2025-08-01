@@ -1,4 +1,4 @@
-interface Car{
+export interface Car{
     id:number;
     name:string;
     montadora:string;
