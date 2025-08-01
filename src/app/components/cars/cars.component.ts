@@ -9,11 +9,11 @@ import { Car } from '../../Car';
 })
 export class CarsComponent {
   isUpdate: boolean = false;
-  idCount: number = 0;
+  idCount: number = 1;
 
   cars: Car[] = [
     {
-      id: 0,
+      id: 1,
       name: 'Palio',
       montadora: 'Fiat',
       price: 3000,
@@ -31,6 +31,11 @@ export class CarsComponent {
     this.car = {} as Car;
     this.isUpdate = false;
   }
-  updateCar(car: Car) {}
-  removeCar(car: Car) {}
+  updateCar(car: Car) {
+    this.isUpdate = true;
+    this.car = car; 
+  }
+  removeCar(car: Car) {
+   
+  }
 }
