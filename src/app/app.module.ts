@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormCarroComponent } from './components/form-carro/form-carro.component';
 import { FormsModule } from '@angular/forms';
 import { CarsComponent } from './components/cars/cars.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormCarroComponent,
-    CarsComponent
+    CarsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
